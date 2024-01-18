@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Clash of Gems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <link  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"> -->
+    
+    <div class="fixed text-white text-sm ml-2 mt-2
+                select-none">
+         <span >Score :  </span><span id="scoreEl">0</span>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+
+        <div class="bg-white  max-w-md w-full p-6 text-center">
+            
+            <h1 class="text-4xl font-bold leading-none" id="bigScoreEl">0</h1>
+            <p class="test-sm text-gray-700 mb-4">Points</p>
+            <div>
+                <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id="startGameBtn">Start game</button>
+            </div>
+            
+        </div>
+ 
+        <p id="gmovr">Game Over</p>
+       
+
+    </div>
+
+    <canvas></canvas>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+  
