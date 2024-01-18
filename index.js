@@ -9,7 +9,6 @@ const scoreEl = document.querySelector('#scoreEl')
 const startGameBtn =document.querySelector('#startGameBtn')
 const modalEl =document.querySelector('#modalEl')
 const bigScoreEl =document.querySelector('#bigScoreEl')
-const gmovr = document.getElementById(gmovr)
 
 // console.log(scoreEl)
 class Player {
@@ -205,7 +204,6 @@ function animate() {
             cancelAnimationFrame(animationId)
             modalEl.style.display = 'flex'
             bigScoreEl.innerHTML = score
-            gmovr.style.display = innerHTML(gmovr)
         }
     projectiles.forEach((projectile, projectileIndex) => {
         const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y)
